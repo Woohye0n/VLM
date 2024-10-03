@@ -50,6 +50,12 @@ def run():
     instances_file = './annotations/instances_val2017.json' #Segmentation, category_id, bbox
     keypoints_file = './annotations/person_keypoints_val2017.json' #Segmentation, keypoints, id, bbox
     
+    # Log files
+    with open(f"./minmax.csv", "w") as f:
+        f.write(f"hallucination, attn_max, attn_min\n")
+    with open(f"./loss.csv", "w") as f:
+        f.write(f"img_idx,cat_idx,hallucination,is_positive,cat_name,dice_ce,focal,l2,scaled_dice_ce,scaled_focal,scaled_l2\n")
+    
     # Load dataset
     dataset = CocoDetection(root=data_dir, annFile=instances_file)
     coco = dataset.coco
@@ -70,6 +76,8 @@ def run():
             
             # Get instance mask
             segmentation = obj["segmentation"]
+            if type(segmentation) != list:
+                continue
             mask = np.zeros_like(image, dtype=np.uint8)
             poly = np.array(segmentation[0]).reshape((-1, 2)).astype(np.int32)
             cv2.fillPoly(mask, [poly], (255, 255, 255))
@@ -94,7 +102,12 @@ def run():
         vis_image = cv2.cvtColor(vis_image, cv2.COLOR_RGB2BGR)
 
         # Predict top-k-area positives & k-random negatives
-        k = 1
+        k = 0
+        if len(positive_list) > 3:
+            k = 3
+        else:
+            k = len(positive_list)
+            
         predict_list = positive_list[:k]
         predict_list += random.sample(negative_list, k)
         for cat_idx, cat_name in enumerate(predict_list):
@@ -128,14 +141,15 @@ def run():
 
             text = tokenizer.decode(outputs["sequences"][0]).strip()
             print(text)
-            
+                        
             answer = ""
             if "Yes" in text:
                 answer = "yes"
             elif "No" in text:
                 answer = "no"
             
-            hallucination = (cat_idx < k and answer == "no") or (cat_idx >= k and answer == "yes")
+            is_positive = cat_idx < k
+            hallucination = (is_positive and answer == "no") or (not is_positive and answer == "yes")
             
             heat_torch_stack, img_with_attn = get_heatmap(model, outputs, tokenizer, prompt, image, input_ids)
             
@@ -184,10 +198,12 @@ def run():
                 cv2.imwrite(f"./img/{img_idx}_{cat_idx}/{str(start_idx + i).zfill(4)}_token_{tt}.png", img_with_attn)
             
             attn = avg_attn
+            scaled_attn = torch.relu(attn)
+            scaled_attn = scaled_attn * 10
             # attn = torch.relu(avg_attn)
             # attn = attn / attn.max()
 
-            img_with_attn, heatmap = show_mask_on_image(np_img, attn.numpy())
+            img_with_attn, heatmap = show_mask_on_image(np_img, scaled_attn.numpy())
             img_with_attn = cv2.cvtColor(img_with_attn, cv2.COLOR_BGR2RGB)
             # tt = tokenizer.decode(outputs["sequences"][0][i], add_special_tokens=False).strip()
             # tt = tokenizer.decode(input_ids_ret[i], add_special_tokens=False).strip()
@@ -195,32 +211,43 @@ def run():
             # if tt == cat_name:
             with open(f"./minmax.csv", "a") as f:
                 f.write(f"{hallucination}, {attn.max()}, {attn.min()}\n")
-            continue
+
             h, w = mask.shape
             attn_h, attn_w = attn.size()
-            mask1 = mask
+            mask_resize = mask
             
+            # Resize mask to square size
             if h != attn_h:
                 half_h = (attn_h - h) // 2
                 block1 = np.zeros((half_h, w), dtype=np.uint8)
                 block2 = np.zeros((attn_h - h - half_h, w), dtype=np.uint8)
-                mask1 = cv2.vconcat([block1, mask1, block2])
+                mask_resize = cv2.vconcat([block1, mask_resize, block2])
             if w != attn_w:
                 half_w = (attn_w - w) // 2
                 block1 = np.zeros((h, half_w), dtype=np.uint8)
                 block2 = np.zeros((h, attn_w - w - half_w), dtype=np.uint8)
-                mask1 = cv2.hconcat([block1, mask1, block2])
+                mask_resize = cv2.hconcat([block1, mask_resize, block2])
                 
-            gt = torch.tensor(mask1, dtype=torch.float32).unsqueeze(0).unsqueeze(0)
+            gt = torch.tensor(mask_resize, dtype=torch.float32).unsqueeze(0).unsqueeze(0)
+            gt /= gt.max()
             attn_unsq = attn.unsqueeze(0).unsqueeze(0)
-            seg_loss = monai.losses.DiceCELoss(sigmoid=False, squared_pred=True, reduction='mean')
-            l2_loss = torch.nn.MSELoss()
-            loss = seg_loss(gt, attn_unsq)
-            l2 = l2_loss(gt, attn_unsq)
-            print(loss.item(), l2.item())
+            scaled_attn_unsq = scaled_attn.unsqueeze(0).unsqueeze(0)
             
-            with open(f"./log.csv", "a") as f:
-                f.write(f"{img_idx},{cat_idx},{cat_name},{loss.item()},{l2.item()}\n")
+            dice_ce_loss = monai.losses.DiceCELoss(sigmoid=False, squared_pred=True, reduction='mean')
+            l2_loss = torch.nn.MSELoss()
+            focal_loss = monai.losses.FocalLoss()
+            
+            dice_ce = dice_ce_loss(gt, attn_unsq)
+            focal = focal_loss(gt, attn_unsq)
+            l2 = l2_loss(gt, attn_unsq)
+            
+            scaled_dice_ce = dice_ce_loss(gt, scaled_attn_unsq)
+            scaled_focal = focal_loss(gt, scaled_attn_unsq)
+            scaled_l2 = l2_loss(gt, scaled_attn_unsq)
+            print(dice_ce.item(), focal.item(), l2.item(), scaled_dice_ce.item(), scaled_focal.item(), scaled_l2.item())
+            
+            with open(f"./loss.csv", "a") as f:
+                f.write(f"{img_idx},{cat_idx},{hallucination},{is_positive},{cat_name},{scaled_dice_ce.item()},{scaled_focal.item()},{scaled_l2.item()}\n")
                 
 if __name__ == '__main__':
     run()
