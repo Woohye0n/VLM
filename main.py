@@ -107,7 +107,7 @@ def run():
             k = 3
         else:
             k = len(positive_list)
-            
+        
         predict_list = positive_list[:k]
         predict_list += random.sample(negative_list, k)
         for cat_idx, cat_name in enumerate(predict_list):
@@ -141,7 +141,7 @@ def run():
 
             text = tokenizer.decode(outputs["sequences"][0]).strip()
             print(text)
-                        
+                
             answer = ""
             if "Yes" in text:
                 answer = "yes"
@@ -199,9 +199,8 @@ def run():
             
             attn = avg_attn
             scaled_attn = torch.relu(attn)
-            scaled_attn = scaled_attn * 10
-            # attn = torch.relu(avg_attn)
-            # attn = attn / attn.max()
+            # scaled_attn = scaled_attn * 10
+            scaled_attn /= scaled_attn.max()
 
             img_with_attn, heatmap = show_mask_on_image(np_img, scaled_attn.numpy())
             img_with_attn = cv2.cvtColor(img_with_attn, cv2.COLOR_BGR2RGB)
@@ -227,7 +226,7 @@ def run():
                 block1 = np.zeros((h, half_w), dtype=np.uint8)
                 block2 = np.zeros((h, attn_w - w - half_w), dtype=np.uint8)
                 mask_resize = cv2.hconcat([block1, mask_resize, block2])
-                
+            
             gt = torch.tensor(mask_resize, dtype=torch.float32).unsqueeze(0).unsqueeze(0)
             gt /= gt.max()
             attn_unsq = attn.unsqueeze(0).unsqueeze(0)
@@ -248,6 +247,6 @@ def run():
             
             with open(f"./loss.csv", "a") as f:
                 f.write(f"{img_idx},{cat_idx},{hallucination},{is_positive},{cat_name},{scaled_dice_ce.item()},{scaled_focal.item()},{scaled_l2.item()}\n")
-                
+            
 if __name__ == '__main__':
     run()
