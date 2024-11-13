@@ -1,0 +1,718 @@
+img_idx,cat_idx,hallucination,is_positive,cat_name
+0,0,True,True,tv
+0,1,True,True,chair
+0,2,False,True,person
+0,3,False,False,train
+0,4,False,False,cell phone
+0,5,False,False,stop sign
+1,0,True,True,bear
+1,1,False,False,elephant
+2,0,True,True,bed
+2,1,True,True,potted plant
+2,2,True,True,chair
+2,3,False,False,baseball glove
+2,4,False,False,hot dog
+2,5,False,False,keyboard
+3,0,True,True,stop sign
+3,1,True,True,truck
+3,2,True,True,car
+3,3,False,False,fire hydrant
+3,4,False,False,zebra
+3,5,False,False,snowboard
+4,0,True,True,teddy bear
+4,1,True,True,bed
+4,2,False,False,potted plant
+4,3,False,False,wine glass
+5,0,False,True,person
+5,1,True,True,skis
+5,2,False,False,zebra
+5,3,False,False,orange
+6,0,True,True,refrigerator
+6,1,True,True,oven
+6,2,False,False,giraffe
+6,3,False,False,sports ball
+7,0,False,True,person
+7,1,True,True,baseball glove
+7,2,True,True,sports ball
+7,3,False,False,keyboard
+7,4,False,False,truck
+7,5,False,False,suitcase
+8,0,True,True,person
+8,1,True,True,tennis racket
+8,2,False,False,bench
+8,3,False,False,sheep
+9,0,True,True,person
+9,1,True,True,handbag
+9,2,True,True,tennis racket
+9,3,False,False,fire hydrant
+9,4,False,False,chair
+9,5,False,False,bear
+10,0,True,True,person
+10,1,True,True,handbag
+10,2,True,True,boat
+10,3,False,False,sink
+10,4,False,False,teddy bear
+10,5,False,False,kite
+11,0,False,True,person
+11,1,True,True,cell phone
+11,2,True,True,clock
+11,3,False,False,orange
+11,4,False,False,tv
+11,5,False,False,stop sign
+12,0,False,True,person
+12,1,True,True,train
+12,2,False,False,wine glass
+12,3,False,False,zebra
+13,0,True,True,sandwich
+13,1,True,True,bowl
+13,2,False,False,couch
+13,3,False,False,tennis racket
+14,0,True,True,person
+14,1,True,True,surfboard
+14,2,False,False,cup
+14,3,False,False,bear
+15,0,True,True,laptop
+15,1,True,True,tv
+15,2,True,True,keyboard
+15,3,False,False,baseball bat
+15,4,False,False,wine glass
+15,5,False,False,umbrella
+16,0,True,True,car
+16,1,True,True,truck
+16,2,False,False,stop sign
+16,3,False,False,bird
+17,0,True,True,bus
+17,1,True,True,person
+17,2,False,False,giraffe
+17,3,False,False,car
+18,0,True,True,cat
+18,1,True,True,keyboard
+18,2,False,False,stop sign
+18,3,False,False,sports ball
+19,0,True,True,airplane
+19,1,True,True,person
+19,2,False,False,giraffe
+19,3,False,False,toaster
+20,0,True,True,zebra
+20,1,False,False,toaster
+21,0,True,True,bed
+21,1,True,True,chair
+21,2,True,True,dining table
+21,3,False,False,toilet
+21,4,False,False,refrigerator
+21,5,False,False,skis
+22,0,True,True,bus
+22,1,True,True,person
+22,2,True,True,traffic light
+22,3,False,False,cake
+22,4,False,False,potted plant
+22,5,False,False,sink
+23,0,True,True,bowl
+23,1,True,True,apple
+23,2,False,False,orange
+23,3,False,False,car
+24,0,True,True,person
+24,1,True,True,baseball bat
+24,2,False,False,fork
+24,3,False,False,suitcase
+25,0,True,True,dining table
+25,1,True,True,cake
+25,2,True,True,wine glass
+25,3,False,False,skateboard
+25,4,False,False,frisbee
+25,5,False,False,cat
+26,0,False,True,person
+26,1,True,True,surfboard
+26,2,False,False,frisbee
+26,3,False,False,sandwich
+27,0,True,True,person
+27,1,True,True,tie
+27,2,False,False,truck
+27,3,False,False,remote
+28,0,True,True,dining table
+28,1,True,True,cup
+28,2,False,True,person
+28,3,False,False,backpack
+28,4,False,False,tie
+28,5,False,False,fire hydrant
+29,0,True,True,person
+29,1,True,True,skis
+29,2,False,False,boat
+29,3,False,False,cup
+30,0,True,True,person
+30,1,True,True,skis
+30,2,False,False,umbrella
+30,3,False,False,zebra
+31,0,True,True,donut
+31,1,True,True,banana
+31,2,False,False,carrot
+31,3,False,False,kite
+32,0,True,True,dining table
+32,1,True,True,cup
+32,2,True,True,knife
+32,3,False,False,pizza
+32,4,False,False,bus
+32,5,False,False,skateboard
+33,0,False,True,person
+33,1,True,True,bottle
+33,2,True,True,handbag
+33,3,False,False,laptop
+33,4,False,False,cake
+33,5,False,False,kite
+34,0,True,True,boat
+34,1,True,True,bird
+34,2,False,False,potted plant
+34,3,False,False,parking meter
+35,0,False,True,person
+35,1,True,True,toilet
+35,2,True,True,sink
+35,3,False,False,zebra
+35,4,False,False,bench
+35,5,False,False,tennis racket
+36,0,True,True,person
+36,1,True,True,backpack
+36,2,True,True,skis
+36,3,False,False,vase
+36,4,False,False,mouse
+36,5,False,False,orange
+37,0,True,True,bowl
+37,1,True,True,broccoli
+37,2,False,False,backpack
+37,3,False,False,snowboard
+38,0,True,True,person
+38,1,True,True,skateboard
+38,2,False,False,book
+38,3,False,False,bench
+39,0,True,True,banana
+39,1,True,True,cup
+39,2,True,True,keyboard
+39,3,False,False,tennis racket
+39,4,False,False,dog
+39,5,False,False,motorcycle
+40,0,True,True,dining table
+40,1,True,True,carrot
+40,2,True,True,broccoli
+40,3,False,False,banana
+40,4,False,False,bench
+40,5,False,False,elephant
+41,0,False,True,person
+41,1,True,True,couch
+41,2,True,True,remote
+41,3,False,False,fire hydrant
+41,4,False,False,toothbrush
+41,5,False,False,baseball bat
+42,0,True,True,person
+42,1,True,True,dining table
+42,2,True,True,tie
+42,3,False,False,traffic light
+42,4,False,False,sandwich
+42,5,False,False,laptop
+43,0,False,True,person
+43,1,True,True,tie
+43,2,False,False,clock
+43,3,False,False,traffic light
+44,0,True,True,couch
+44,1,True,True,chair
+44,2,True,True,tv
+44,3,False,False,pizza
+44,4,False,False,bench
+44,5,False,False,baseball glove
+45,0,True,True,person
+45,1,True,True,surfboard
+45,2,False,False,airplane
+45,3,False,False,microwave
+46,0,True,True,tv
+46,1,True,True,cat
+46,2,True,True,laptop
+46,3,False,False,dog
+46,4,False,False,bench
+46,5,False,False,chair
+47,0,False,True,person
+47,1,True,True,scissors
+47,2,False,True,handbag
+47,3,False,False,snowboard
+47,4,False,False,bench
+47,5,False,False,surfboard
+48,0,True,True,bus
+48,1,False,True,person
+48,2,False,True,car
+48,3,False,False,carrot
+48,4,True,False,handbag
+48,5,True,False,tv
+49,0,False,True,person
+49,1,True,True,cell phone
+49,2,False,False,zebra
+49,3,False,False,spoon
+50,0,False,True,person
+50,1,True,True,surfboard
+50,2,True,True,bottle
+50,3,False,False,pizza
+50,4,False,False,book
+50,5,False,False,cow
+51,0,True,True,airplane
+51,1,False,False,truck
+52,0,True,True,toilet
+52,1,False,False,chair
+53,0,True,True,person
+53,1,True,True,skis
+53,2,False,False,handbag
+53,3,False,False,skateboard
+54,0,True,True,person
+54,1,False,True,tennis racket
+54,2,False,False,pizza
+54,3,False,False,potted plant
+55,0,True,True,bowl
+55,1,True,True,spoon
+55,2,False,False,backpack
+55,3,False,False,person
+56,0,True,True,sheep
+56,1,False,False,wine glass
+57,0,True,True,banana
+57,1,False,False,sink
+58,0,True,True,train
+58,1,True,True,person
+58,2,True,True,truck
+58,3,False,False,bowl
+58,4,False,False,stop sign
+58,5,False,False,toothbrush
+59,0,True,True,sink
+59,1,False,False,broccoli
+60,0,True,True,person
+60,1,True,True,surfboard
+60,2,False,False,bicycle
+60,3,False,False,toothbrush
+61,0,True,True,person
+61,1,True,True,bench
+61,2,True,True,baseball glove
+61,3,False,False,cake
+61,4,False,False,zebra
+61,5,False,False,keyboard
+62,0,True,True,orange
+62,1,True,True,apple
+62,2,False,False,microwave
+62,3,False,False,cat
+63,0,True,True,truck
+63,1,True,True,bus
+63,2,True,True,car
+63,3,False,False,boat
+63,4,False,False,teddy bear
+63,5,False,False,elephant
+64,0,False,True,person
+64,1,True,True,tv
+64,2,True,True,dining table
+64,3,False,False,handbag
+64,4,False,False,remote
+64,5,False,False,toaster
+65,0,False,True,person
+65,1,True,True,cell phone
+65,2,False,False,stop sign
+65,3,False,False,teddy bear
+66,0,True,True,toilet
+66,1,False,False,sandwich
+67,0,True,True,elephant
+67,1,True,True,person
+67,2,False,False,baseball glove
+67,3,False,False,car
+68,0,True,True,person
+68,1,True,True,frisbee
+68,2,False,False,fork
+68,3,False,False,bed
+69,0,False,True,person
+69,1,True,True,umbrella
+69,2,True,True,truck
+69,3,False,False,bicycle
+69,4,False,False,clock
+69,5,False,False,traffic light
+70,0,True,True,elephant
+70,1,False,False,refrigerator
+71,0,True,True,person
+71,1,True,True,surfboard
+71,2,False,False,donut
+71,3,False,False,horse
+72,0,True,True,horse
+72,1,False,True,person
+72,2,False,False,tv
+72,3,False,False,cat
+73,0,True,True,motorcycle
+73,1,True,True,bicycle
+73,2,True,True,truck
+73,3,False,False,bottle
+73,4,False,False,skis
+73,5,False,False,elephant
+74,0,False,True,person
+74,1,True,True,backpack
+74,2,True,True,kite
+74,3,False,False,bed
+74,4,False,False,chair
+74,5,False,False,surfboard
+75,0,True,True,refrigerator
+75,1,True,True,oven
+75,2,True,True,sink
+75,3,False,False,potted plant
+75,4,False,False,hair drier
+75,5,False,False,cow
+76,0,True,True,kite
+76,1,False,False,laptop
+77,0,True,True,bed
+77,1,True,True,clock
+77,2,True,True,remote
+77,3,False,False,hot dog
+77,4,False,False,snowboard
+77,5,False,False,laptop
+78,0,True,True,motorcycle
+78,1,False,True,person
+78,2,True,False,tie
+78,3,False,False,hot dog
+79,0,True,True,dining table
+79,1,True,True,wine glass
+79,2,True,True,chair
+79,3,False,False,kite
+79,4,False,False,couch
+79,5,False,False,zebra
+80,0,True,True,clock
+80,1,False,False,kite
+81,0,False,True,person
+81,1,True,True,skateboard
+81,2,False,False,boat
+81,3,False,False,snowboard
+82,0,True,True,carrot
+82,1,True,True,knife
+82,2,False,False,microwave
+82,3,False,False,boat
+83,0,True,True,person
+83,1,False,True,tie
+83,2,True,True,bottle
+83,3,False,False,hair drier
+83,4,False,False,mouse
+83,5,False,False,frisbee
+84,0,False,True,person
+84,1,True,True,motorcycle
+84,2,True,True,bicycle
+84,3,False,False,baseball glove
+84,4,False,False,hair drier
+84,5,False,False,toilet
+85,0,True,True,bowl
+85,1,True,True,broccoli
+85,2,True,True,fork
+85,3,False,False,bicycle
+85,4,False,False,hair drier
+85,5,False,False,handbag
+86,0,False,True,person
+86,1,True,True,tie
+86,2,False,False,keyboard
+86,3,False,False,handbag
+87,0,True,True,pizza
+87,1,True,True,fork
+87,2,False,False,bicycle
+87,3,False,False,baseball glove
+88,0,True,True,person
+88,1,True,True,sheep
+88,2,False,False,refrigerator
+88,3,False,False,boat
+89,0,True,True,traffic light
+89,1,True,True,car
+89,2,False,False,potted plant
+89,3,False,False,suitcase
+90,0,True,True,banana
+90,1,False,True,person
+90,2,False,False,cow
+90,3,False,False,elephant
+91,0,True,True,fire hydrant
+91,1,True,True,bicycle
+91,2,False,False,tv
+91,3,False,False,snowboard
+92,0,False,True,person
+92,1,True,True,frisbee
+92,2,False,False,vase
+92,3,False,False,tie
+93,0,True,True,person
+93,1,True,True,laptop
+93,2,True,True,keyboard
+93,3,False,False,motorcycle
+93,4,False,False,train
+93,5,False,False,bottle
+94,0,True,True,umbrella
+94,1,False,True,person
+94,2,False,False,sheep
+94,3,False,False,dining table
+95,0,True,True,person
+95,1,True,True,tv
+95,2,True,True,keyboard
+95,3,False,False,chair
+95,4,False,False,snowboard
+95,5,False,False,bottle
+96,0,True,True,person
+96,1,True,True,dining table
+96,2,True,True,cup
+96,3,False,False,couch
+96,4,False,False,baseball bat
+96,5,False,False,microwave
+97,0,True,True,truck
+97,1,True,True,person
+97,2,True,True,fire hydrant
+97,3,False,False,clock
+97,4,False,False,skateboard
+97,5,False,False,handbag
+98,0,True,True,tv
+98,1,False,True,person
+98,2,True,True,sink
+98,3,False,False,mouse
+98,4,False,False,frisbee
+98,5,False,False,cup
+99,0,True,True,car
+99,1,True,True,person
+99,2,True,True,suitcase
+99,3,False,False,bird
+99,4,False,False,kite
+99,5,False,False,dining table
+100,0,True,True,sandwich
+100,1,True,True,bowl
+100,2,True,True,hot dog
+100,3,False,False,fire hydrant
+100,4,False,False,baseball glove
+100,5,False,False,handbag
+101,0,True,True,bed
+101,1,True,True,dining table
+101,2,True,True,chair
+101,3,False,False,carrot
+101,4,False,False,bench
+101,5,True,False,person
+102,0,True,True,car
+102,1,True,True,cat
+102,2,True,True,bicycle
+102,3,False,False,donut
+102,4,False,False,remote
+102,5,False,False,tv
+103,0,True,True,dining table
+103,1,True,True,sandwich
+103,2,True,True,knife
+103,3,False,False,donut
+103,4,False,False,banana
+103,5,False,False,tv
+104,0,False,True,person
+104,1,True,True,couch
+104,2,True,True,dining table
+104,3,False,False,scissors
+104,4,False,False,skateboard
+104,5,False,False,refrigerator
+105,0,False,True,person
+105,1,True,True,baseball glove
+105,2,False,False,clock
+105,3,False,False,hair drier
+106,0,True,True,toilet
+106,1,True,True,sink
+106,2,False,False,pizza
+106,3,False,False,airplane
+107,0,True,True,bed
+107,1,False,False,giraffe
+108,0,False,True,person
+108,1,False,True,tie
+108,2,False,False,stop sign
+108,3,False,False,laptop
+109,0,True,True,stop sign
+109,1,False,False,laptop
+110,0,True,True,bicycle
+110,1,True,True,motorcycle
+110,2,True,True,person
+110,3,False,False,toilet
+110,4,False,False,wine glass
+110,5,False,False,broccoli
+111,0,True,True,person
+111,1,True,True,car
+111,2,True,True,traffic light
+111,3,False,False,knife
+111,4,False,False,keyboard
+111,5,False,False,fork
+112,0,True,True,bench
+112,1,True,True,person
+112,2,True,True,handbag
+112,3,False,False,kite
+112,4,False,False,broccoli
+112,5,False,False,bowl
+113,0,True,True,truck
+113,1,False,False,tv
+114,0,False,True,person
+114,1,True,True,suitcase
+114,2,False,True,handbag
+114,3,False,False,backpack
+114,4,False,False,airplane
+114,5,False,False,keyboard
+115,0,True,True,zebra
+115,1,False,False,donut
+116,0,True,True,laptop
+116,1,True,True,chair
+116,2,False,False,dining table
+116,3,False,False,train
+117,0,True,True,sheep
+117,1,True,True,sports ball
+117,2,False,False,apple
+117,3,False,False,bed
+118,0,True,True,person
+118,1,True,True,chair
+118,2,True,True,tennis racket
+118,3,False,False,car
+118,4,False,False,microwave
+118,5,False,False,zebra
+119,0,False,True,person
+119,1,True,True,tv
+119,2,True,True,suitcase
+119,3,False,False,apple
+119,4,False,False,airplane
+119,5,False,False,sink
+120,0,True,True,dining table
+120,1,True,True,pizza
+120,2,True,True,cup
+120,3,False,False,scissors
+120,4,False,False,bird
+120,5,False,False,couch
+121,0,True,True,person
+121,1,True,True,baseball glove
+121,2,True,True,baseball bat
+121,3,False,False,pizza
+121,4,True,False,orange
+121,5,False,False,toilet
+122,0,True,True,banana
+122,1,False,False,suitcase
+123,0,True,True,person
+123,1,True,True,teddy bear
+123,2,True,True,backpack
+123,3,False,False,refrigerator
+123,4,False,False,cake
+123,5,False,False,hair drier
+124,0,True,True,horse
+124,1,False,True,person
+124,2,False,False,bench
+124,3,False,False,boat
+125,0,True,True,dining table
+125,1,True,True,banana
+125,2,False,False,knife
+125,3,False,False,elephant
+126,0,False,True,motorcycle
+126,1,False,True,person
+126,2,True,True,bicycle
+126,3,False,False,toilet
+126,4,False,False,mouse
+126,5,False,False,airplane
+127,0,False,True,person
+127,1,True,True,skateboard
+127,2,False,False,cup
+127,3,False,False,chair
+128,0,False,True,person
+128,1,True,True,frisbee
+128,2,False,False,microwave
+128,3,False,False,sink
+129,0,True,True,airplane
+129,1,True,True,truck
+129,2,True,True,person
+129,3,False,False,microwave
+129,4,False,False,book
+129,5,False,False,dining table
+130,0,True,True,person
+130,1,True,True,bench
+130,2,True,True,skateboard
+130,3,False,False,sheep
+130,4,False,False,fire hydrant
+130,5,False,False,tv
+131,0,True,True,cake
+131,1,True,True,dining table
+131,2,False,False,orange
+131,3,False,False,fire hydrant
+132,0,False,True,person
+132,1,True,True,chair
+132,2,True,True,dining table
+132,3,False,False,baseball bat
+132,4,False,False,bowl
+132,5,False,False,vase
+133,0,True,True,person
+133,1,True,True,dining table
+133,2,True,True,couch
+133,3,False,False,truck
+133,4,False,False,knife
+133,5,False,False,oven
+134,0,True,True,person
+134,1,True,True,frisbee
+134,2,False,False,snowboard
+134,3,False,False,toilet
+135,0,True,True,chair
+135,1,True,True,dining table
+135,2,True,True,couch
+135,3,False,False,tennis racket
+135,4,False,False,carrot
+135,5,False,False,keyboard
+136,0,True,True,refrigerator
+136,1,True,True,cat
+136,2,False,False,oven
+136,3,False,False,kite
+137,0,True,True,refrigerator
+137,1,True,True,dining table
+137,2,True,True,book
+137,3,False,False,mouse
+137,4,False,False,sports ball
+137,5,False,False,donut
+138,0,True,True,person
+138,1,True,True,dining table
+138,2,True,True,chair
+138,3,False,False,stop sign
+138,4,False,False,cat
+138,5,False,False,bird
+139,0,True,True,train
+139,1,True,True,car
+139,2,False,False,surfboard
+139,3,False,False,cake
+140,0,True,True,kite
+140,1,True,True,person
+140,2,True,True,backpack
+140,3,False,False,bottle
+140,4,False,False,microwave
+140,5,False,False,pizza
+141,0,True,True,train
+141,1,True,True,person
+141,2,False,False,bed
+141,3,False,False,remote
+142,0,True,True,cat
+142,1,True,True,bed
+142,2,False,False,bus
+142,3,False,False,cell phone
+143,0,True,True,cow
+143,1,False,False,sandwich
+144,0,True,True,sandwich
+144,1,True,True,knife
+144,2,False,False,oven
+144,3,False,False,fork
+145,0,True,True,bowl
+145,1,True,True,carrot
+145,2,True,True,spoon
+145,3,False,False,banana
+145,4,False,False,bench
+145,5,False,False,traffic light
+146,0,True,True,traffic light
+146,1,False,False,refrigerator
+147,0,True,True,broccoli
+147,1,False,False,banana
+148,0,True,True,person
+148,1,True,True,bowl
+148,2,True,True,couch
+148,3,False,False,boat
+148,4,False,False,donut
+148,5,False,False,dining table
+149,0,True,True,bus
+149,1,True,True,truck
+149,2,True,True,car
+149,3,False,False,bicycle
+149,4,False,False,potted plant
+149,5,False,False,suitcase
+150,0,True,True,stop sign
+150,1,True,True,bus
+150,2,False,False,teddy bear
+150,3,False,False,mouse
+151,0,True,True,couch
+151,1,True,True,cat
+151,2,True,True,mouse
+151,3,False,False,toaster
+151,4,False,False,laptop
+151,5,False,False,bird
+152,0,True,True,bus
+152,1,False,False,orange
+153,0,True,True,person
+153,1,True,True,bicycle
+153,2,True,True,skateboard

@@ -1,0 +1,142 @@
+0,0,False,True,bear,nan,nan,nan
+0,1,True,True,oven,nan,nan,nan
+0,2,False,True,suitcase,nan,nan,nan
+1,0,False,True,person,nan,nan,nan
+1,1,False,False,cell phone,nan,nan,nan
+1,2,False,False,sink,nan,nan,nan
+2,0,False,True,person,nan,nan,nan
+2,1,False,True,cell phone,nan,nan,nan
+2,2,False,True,sink,nan,nan,nan
+3,0,False,True,person,nan,nan,nan
+3,1,True,True,cell phone,nan,nan,nan
+3,2,False,True,sink,nan,nan,nan
+4,0,False,True,person,nan,nan,nan
+4,1,True,True,cell phone,nan,nan,nan
+4,2,True,False,sink,nan,nan,nan
+5,0,True,True,person,1.460133671760559,0.1963387280702591,0.08045303076505661
+5,1,False,True,cell phone,nan,nan,nan
+5,2,False,False,sink,nan,nan,nan
+6,0,False,True,person,nan,nan,nan
+6,1,False,True,cell phone,nan,nan,nan
+6,2,False,False,sink,nan,nan,nan
+7,0,True,True,person,1.659330129623413,0.24615751206874847,0.15138445794582367
+7,1,False,True,cell phone,nan,nan,nan
+7,2,False,True,sink,nan,nan,nan
+8,0,True,True,person,1.615211009979248,0.20148399472236633,0.07160911709070206
+8,1,False,True,cell phone,nan,nan,nan
+8,2,False,False,sink,nan,nan,nan
+9,0,True,True,person,1.8484355211257935,0.3251108229160309,0.2910643219947815
+9,1,True,True,cell phone,nan,nan,nan
+9,2,False,True,sink,nan,nan,nan
+10,0,True,True,person,1.6913670301437378,0.20761291682720184,0.0699336975812912
+10,1,True,True,cell phone,1.6862249374389648,0.17370161414146423,0.035420533269643784
+10,2,False,True,sink,nan,nan,nan
+11,0,True,True,person,1.7308896780014038,0.3776240944862366,0.4332196116447449
+11,1,True,True,cell phone,1.530598521232605,0.18022048473358154,0.027629852294921875
+11,2,False,True,sink,nan,nan,nan
+12,0,True,True,person,1.6486399173736572,0.22502492368221283,0.11181683093309402
+12,1,True,True,cell phone,nan,nan,nan
+12,2,True,False,sink,nan,nan,nan
+13,0,True,True,person,nan,nan,nan
+13,1,False,True,cell phone,nan,nan,nan
+13,2,False,False,sink,nan,nan,nan
+14,0,True,True,person,1.6373376846313477,0.17605186998844147,0.015553703531622887
+14,1,False,True,cell phone,nan,nan,nan
+14,2,False,False,sink,nan,nan,nan
+16,0,True,True,person,nan,nan,nan
+16,1,True,True,cell phone,nan,nan,nan
+16,2,False,False,sink,nan,nan,nan
+17,0,True,True,person,1.6386046409606934,0.17895346879959106,0.026078753173351288
+17,1,True,True,cell phone,nan,nan,nan
+17,2,False,False,sink,nan,nan,nan
+18,0,False,True,person,nan,nan,nan
+18,1,False,True,cell phone,nan,nan,nan
+18,2,False,False,sink,nan,nan,nan
+19,0,False,True,person,1.6935468912124634,0.17362749576568604,0.017215432599186897
+19,1,True,True,cell phone,nan,nan,nan
+19,2,False,False,sink,nan,nan,nan
+20,0,False,True,person,nan,nan,nan
+20,1,False,False,cell phone,nan,nan,nan
+20,2,False,False,sink,nan,nan,nan
+21,0,False,True,person,nan,nan,nan
+21,1,False,True,cell phone,nan,nan,nan
+21,2,False,True,sink,nan,nan,nan
+22,0,True,True,person,1.6846601963043213,0.17952142655849457,0.020395269617438316
+22,1,False,True,cell phone,nan,nan,nan
+22,2,False,True,sink,nan,nan,nan
+23,0,False,True,person,nan,nan,nan
+23,1,False,True,cell phone,nan,nan,nan
+23,2,False,False,sink,nan,nan,nan
+24,0,True,True,person,1.710869550704956,0.20258568227291107,0.057626258581876755
+24,1,False,True,cell phone,nan,nan,nan
+24,2,False,False,sink,nan,nan,nan
+25,0,True,True,person,nan,nan,nan
+25,1,False,True,cell phone,nan,nan,nan
+25,2,False,True,sink,nan,nan,nan
+26,0,True,True,person,1.6842607259750366,0.180617555975914,0.015829456970095634
+26,1,False,True,cell phone,nan,nan,nan
+26,2,False,False,sink,nan,nan,nan
+27,0,True,True,person,1.5813878774642944,0.2435334026813507,0.17343680560588837
+27,1,False,True,cell phone,nan,nan,nan
+27,2,False,False,sink,nan,nan,nan
+28,0,True,True,person,1.6466009616851807,0.19482074677944183,0.046167779713869095
+28,1,False,True,cell phone,nan,nan,nan
+28,2,False,True,sink,nan,nan,nan
+29,0,True,True,person,1.6592270135879517,0.18684571981430054,0.042723387479782104
+29,1,False,True,cell phone,nan,nan,nan
+29,2,False,False,sink,nan,nan,nan
+30,0,True,True,person,1.665379524230957,0.17951442301273346,0.056351203471422195
+30,1,False,True,cell phone,nan,nan,nan
+30,2,False,False,sink,nan,nan,nan
+31,0,False,True,person,nan,nan,nan
+31,1,False,True,cell phone,nan,nan,nan
+31,2,False,False,sink,nan,nan,nan
+32,0,False,True,person,nan,nan,nan
+32,1,False,True,cell phone,nan,nan,nan
+32,2,False,True,sink,nan,nan,nan
+33,0,True,True,person,1.5807290077209473,0.2947810888290405,0.31404510140419006
+33,1,False,True,cell phone,nan,nan,nan
+33,2,False,True,sink,nan,nan,nan
+34,0,False,True,person,nan,nan,nan
+34,1,False,True,cell phone,nan,nan,nan
+34,2,False,False,sink,nan,nan,nan
+35,0,True,True,person,1.664919376373291,0.3032127916812897,0.2869154214859009
+35,1,False,True,cell phone,nan,nan,nan
+35,2,True,True,sink,1.6907896995544434,0.17724311351776123,0.009470026940107346
+36,0,True,True,person,1.690595030784607,0.17596082389354706,0.007001238875091076
+36,1,False,True,cell phone,nan,nan,nan
+36,2,False,True,sink,nan,nan,nan
+37,0,False,True,person,nan,nan,nan
+37,1,False,True,cell phone,nan,nan,nan
+37,2,False,False,sink,nan,nan,nan
+38,0,True,True,person,1.7602496147155762,0.2435799539089203,0.13539989292621613
+38,1,False,True,cell phone,nan,nan,nan
+38,2,False,False,sink,nan,nan,nan
+39,0,False,True,person,nan,nan,nan
+39,1,False,True,cell phone,nan,nan,nan
+39,2,False,True,sink,nan,nan,nan
+40,0,True,True,person,nan,nan,nan
+40,1,False,True,cell phone,nan,nan,nan
+40,2,False,True,sink,nan,nan,nan
+41,0,True,True,person,1.5702472925186157,0.23928731679916382,0.17995475232601166
+41,1,True,True,cell phone,nan,nan,nan
+41,2,False,True,sink,nan,nan,nan
+42,0,True,True,person,1.8751353025436401,0.36996132135391235,0.3805476427078247
+42,1,False,True,cell phone,nan,nan,nan
+42,2,False,True,sink,nan,nan,nan
+43,0,True,True,person,1.722914695739746,0.368922621011734,0.4228469431400299
+43,1,False,True,cell phone,nan,nan,nan
+43,2,False,False,sink,nan,nan,nan
+44,0,False,True,person,nan,nan,nan
+44,1,False,True,cell phone,nan,nan,nan
+44,2,False,True,sink,nan,nan,nan
+45,0,True,True,person,1.5320204496383667,0.19101835787296295,0.06524395942687988
+45,1,False,True,cell phone,nan,nan,nan
+45,2,False,False,sink,nan,nan,nan
+46,0,False,True,person,nan,nan,nan
+46,1,True,True,cell phone,nan,nan,nan
+46,2,False,True,sink,nan,nan,nan
+47,0,True,True,person,1.7901571989059448,0.27839604020118713,0.20192021131515503
+47,1,True,True,cell phone,nan,nan,nan
+47,2,False,True,sink,nan,nan,nan
+48,0,True,True,person,1.6421928405761719,0.17836926877498627,0.012795142829418182
